@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.adil{
+    color: aliceblue;
+    background: linear-gradient(45deg,#ec2ea3,#e94722);
+    min-height: 100vh ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.adil h1{
+    font-size: 44px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.adil h1 span{
+    color: #b5fa20;
+    border-bottom: 4px solid aliceblue;
+
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #6b843d;
+    color: aliceblue;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    resize: none;
+    
+
+}
+textarea::placeholder{
+    color: aliceblue;
+    font-size: 16px;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: hsl(309, 73%, 56%);
+    color: aliceblue;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+button img{
+    width: 16px;
+    margin-right: 10px;
+}
+select{
+    flex: 1;
+    color: aliceblue;
+    background: #f08820;
+    height: 50px;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px) ;
+    background-position-y: 20px;
+    cursor: pointer;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    textarea {
+        width: 90%; 
+        height: 200px;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    button {
+        width: 100%; 
+        justify-content: center; 
+    }
+
+    select {
+        width: 100%; 
+        background-position-x: 95%; 
+    }
+
+    .adil h1 {
+        font-size: 32px; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    textarea {
+        height: 150px; 
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 20px; 
+    }
+
+    select {
+        font-size: 14px; 
+    }
+}
+
